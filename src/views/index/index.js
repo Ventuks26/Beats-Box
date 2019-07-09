@@ -20,8 +20,8 @@ class Index extends Component {
     this.props.checkSignIn();
   }
   getTokenPath() {
-    let path = window.location.href;
-    return path.substring(path.indexOf("#"), path.length);
+    let path =  window.location.assign;
+    return path.substring(path.indexOf("https://ventuks26.github.io/Beats-Box/"), path.length);
   }
   getResultsCard() {
     const { songs } = this.props;
@@ -64,7 +64,7 @@ class Index extends Component {
               <input
                 type="text"
                 className="Inde-searchBox-input"
-                placeholder="Cancion"
+                placeholder="Canción"
                 onChange={ (e) => { this.setState({ song: e.target.value })}}
                 value={song}
               />
