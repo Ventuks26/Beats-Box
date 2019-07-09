@@ -20,8 +20,8 @@ class Index extends Component {
     this.props.checkSignIn();
   }
   getTokenPath() {
-    let path =  window.location.assign;
-    return path.substring(path.indexOf("https://ventuks26.github.io/Beats-Box/"), path.length);
+    let path = window.location.href;
+    return path.substring(path.indexOf("#"), path.length);
   }
   getResultsCard() {
     const { songs } = this.props;
