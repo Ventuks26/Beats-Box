@@ -5,6 +5,7 @@ import './App.css';
 
 import Index from './views/index';
 import Player from './views/player';
+import Home from  './views/player';
 
 
 class App extends Component {
@@ -12,7 +13,8 @@ class App extends Component {
     return (
       <Router history={ this.props.history }>
         <div>
-          <Route exact path="/" component={ Index }/>
+          <Route exact path="/" component={ Home}/>
+          <Route exact path="/search" component={ Index }/>
           <Route exact path="/player/:songId" component={ Player }/>
           {/* Here you can put more routes on */}
         </div>
