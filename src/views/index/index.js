@@ -25,6 +25,7 @@ class Index extends Component {
   }
   getResultsCard() {
     const { songs } = this.props;
+    console.log(this.props);
     if (songs.length > 0) {
       return(
         <div className="card">
