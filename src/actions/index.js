@@ -1,12 +1,12 @@
-import axios from 'axios';
-import { TrackHandler, Client } from 'spotify-sdk';
+import axios from 'axios'
+import { TrackHandler, Client } from 'spotify-sdk'
 
 let client = Client.instance;
 client.settings = {
   clientId: 'b5b88d6501a44efd976d266384e8adc6',
   secretId: 'ed95138c01e1471ea156cc1d8fa62ea6',
   scopes: ['user-follow-modify user-follow-read user-library-read user-top-read'],
-  redirect_uri: 'http://localhost:3000/'
+  redirect_uri: 'https://ventuks26.github.io/Beats-Box//'
 }
 
 export const checkSignIn = () => {
