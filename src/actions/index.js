@@ -19,7 +19,7 @@ export const checkSignIn = () => {
     }else {
       client.login()
       .then( url => {
-        
+        window.location.href = url;
       });
     }
   }
