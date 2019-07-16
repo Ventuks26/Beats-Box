@@ -1,12 +1,10 @@
-import React, { Component } from 'react';
-import { Route, Router } from 'react-router';
-import PropTypes from 'prop-types';
-import './App.css';
+import React, { Component } from 'react'
+import { Route, Router } from 'react-router'
+import PropTypes from 'prop-types'
+import './App.css'
 
-import Index from './views/index';
-import Player from './views/player';
-import Login from './views/Login';
-
+import Index from './views/index'
+import Player from './views/player'
 
 class App extends Component {
   render() {
@@ -14,9 +12,7 @@ class App extends Component {
       <Router history={ this.props.history }>
         <div>
           <Route exact path="/" component={ Index }/>
-          <Route exact path="/login" component={ Login }/>
-          <Route exact path="/player/:songId" component={ Player }/>
-          {/* Here you can put more routes on */}
+          <Route path="/player/:songId" component={ Player }/>
         </div>
       </Router>
     );
