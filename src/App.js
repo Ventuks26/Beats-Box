@@ -1,10 +1,12 @@
-import React, { Component } from 'react'
-import { Route, Router } from 'react-router'
-import PropTypes from 'prop-types'
-import './App.css'
+import React, { Component } from 'react';
+import { Route, Router } from 'react-router';
+import PropTypes from 'prop-types';
+import './App.css';
 
-import Index from './views/index'
-import Player from './views/player'
+
+import Index from './views/index';
+import Player from './views/player';
+
 
 class App extends Component {
   render() {

@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
-import SongItem from './SongItem'
-import Spinner from 'react-spinkit'
-import { checkSignIn, search } from '../../actions'
-import './index.css'
-import 'materialize-css/dist/css/materialize.min.css'
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import SongItem from './SongItem';
+import Spinner from 'react-spinkit';
+import { checkSignIn, search } from '../../actions';
+import './index.css';
+import 'materialize-css/dist/css/materialize.min.css';
 
 class Index extends Component {
   constructor() {
@@ -25,11 +25,10 @@ class Index extends Component {
   }
   getResultsCard() {
     const { songs } = this.props;
-    console.log(this.props);
     if (songs.length > 0) {
       return(
         <div className="card">
-          <div className="card-content">
+          <div className="card-content resultSong">
             {
               songs.map((currrentValue, index) => {
                 return(
@@ -59,18 +58,25 @@ class Index extends Component {
     }
     return(
       <div className="Index">
+        {/* <div className="content-musicNote">
+        <img
+              src="https://i.postimg.cc/fyTRCn6X/box.png"
+              alt="foto"
+              className="musicNote"
+              />
+           </div>    */}
         <div className="card">
-          <div className="card-content">
+          <div className="card-content  cardSerch">
             <div className="Index-searchBox">
               <input
                 type="text"
                 className="Inde-searchBox-input"
-                placeholder="Canción"
+                placeholder="Buscar"
                 onChange={ (e) => { this.setState({ song: e.target.value })}}
                 value={song}
               />
               <a
-                className="waves-effect waves-light btn green"
+                className="waves-effect waves-light btn #a5dd39"
                 onClick={(e) => this.props.search(song)}>
                 <i className="fa fa-search"></i>
               </a>

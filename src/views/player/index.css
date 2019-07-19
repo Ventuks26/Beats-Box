@@ -1,4 +1,5 @@
 .Player {
+  background-image: linear-gradient(to top, #007adf 0%, #00ecbc 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,13 +7,17 @@
 }
 
 .Player-box {
+  background-color: #0D3BE7;
   display: flex;
 }
-
+audio {
+ filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+}
 .Player-left > img{
   width: 200px;
 }
 
 .Player-right {
   margin-left: 2%;
+  
 }

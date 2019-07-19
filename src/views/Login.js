@@ -4,7 +4,13 @@ class Login extends Component {
   render(){
     return(
       <div>
-        <h2>Home</h2>
+        <div className="content-musicNote">
+        <img
+              src="https://i.postimg.cc/Jnqp9qjC/quaver-outline.png"
+              alt="foto"
+              className="musicNote"
+              />
+           </div>   
       </div>
     );
   }

@@ -1,16 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import registerServiceWorker from './registerServiceWorker'
+import registerServiceWorker from './registerServiceWorker';
 
-import { createStore, applyMiddleware } from 'redux'
-import { Provider } from 'react-redux'
-import createHistory from 'history/createMemoryHistory'
-import { routerMiddleware } from 'react-router-redux'
-import thunk from 'redux-thunk'
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import createHistory from 'history/createMemoryHistory';
+import { routerMiddleware } from 'react-router-redux';
+import thunk from 'redux-thunk';
 
-import App from './App'
-import reducers from './reducers'
+import App from './App';
+import reducers from './reducers';
 
 const history = createHistory()
 const middleware = [routerMiddleware(history),thunk];
