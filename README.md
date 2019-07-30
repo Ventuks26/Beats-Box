@@ -13,7 +13,7 @@
 
 ## 1. Preámbulo
 
-En este proyecto tendremos la oportunidad de crear un sitio web con React donde el usuario pueda buscar canciones de artistas que se encuentren en la nube de Spotify y podrá escuchas un preview de 30 segundos de cada una.
+En este proyecto tendremos la oportunidad de crear un sitio web con React donde el usuario pueda buscar canciones de artistas que se encuentren en la nube de Spotify y podrá escuchar un preview de 30 segundos de cada una.
 
 ## 2. Resumen del proyecto
 React te ayuda a crear interfaces de usuario interactivas de forma sencilla. Diseña vistas simples para cada estado en tu aplicación, y React se encargará de actualizar y renderizar de manera eficiente los componentes correctos cuando los datos cambien
